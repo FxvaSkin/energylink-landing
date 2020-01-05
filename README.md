@@ -1,2 +1,2 @@
-# energylink-lending
+# Energylink Lending
 Gatsby lending for Energylink
