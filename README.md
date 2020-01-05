@@ -1,2 +1,2 @@
-# energylink-lending
-Gatsby lending site for Energylink
+# Energylink Lending
+Gatsby lending for Energylink
