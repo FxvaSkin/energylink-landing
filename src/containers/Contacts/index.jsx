@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './contacts.module.css'
-import { useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 
 import { CallbackForm } from 'containers/CallbackForm'
 

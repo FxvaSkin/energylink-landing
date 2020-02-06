@@ -1,7 +1,7 @@
-import { navigate } from 'gatsby'
+// import { navigate } from 'gatsby'
 
 const FourOhFour = () => {
-  navigate('/')
+  // navigate('/')
   return null
 }
 
