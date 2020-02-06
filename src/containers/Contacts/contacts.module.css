@@ -1,0 +1,29 @@
+.icon {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.3em;
+}
+
+.link {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.section {
+  display: flex;
+  justify-content: stretch;
+}
+
+.section > * {
+  flex: 1;
+}
+
+.callback.callback {
+  transform: translateY(-9em);
+}

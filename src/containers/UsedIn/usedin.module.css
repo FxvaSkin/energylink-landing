@@ -1,0 +1,18 @@
+.container {
+  columns: 18rem;
+  column-gap: 2em;
+}
+
+.card {
+  page-break-inside: avoid;
+  break-inside: avoid-column;
+}
+
+.card + .card {
+  margin-top: 2em;
+}
+
+.body {
+  display: grid;
+  gap: 1em;
+}

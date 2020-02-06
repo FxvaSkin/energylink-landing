@@ -1,0 +1,45 @@
+.container {
+  position: relative;
+  display: flex;
+  min-height: calc(70vmin - 3.5em);
+  height: 20rem;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  background-image: url(images/blog-cover.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.container::before {
+  position: absolute;
+  z-index: 0;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  max-width: var(--max-width);
+  color: white;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 1.5rem;
+  opacity: 0.7;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
