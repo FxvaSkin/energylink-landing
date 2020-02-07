@@ -30,5 +30,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
+  },
+  "devDependencies": {
+    "netlify-lambda": "^1.6.3"
   }
 }
