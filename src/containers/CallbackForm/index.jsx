@@ -11,7 +11,12 @@ const CallbackForm = ({ className, ...props }) => {
   const handleSubmit = async event => {
     event.preventDefault()
 
-    const response = await fetch('http://localhost:34567/send')
+    const response = await fetch('/.netlify/function/send', {
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+    })
     const data = await response.json()
 
     console.log(data)
