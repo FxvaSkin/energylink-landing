@@ -43,3 +43,9 @@
   font-weight: 100;
   transform: translateY(-110%);
 }
+
+.input:required + .label::after {
+  content: '*';
+  margin-left: 1px;
+  color: #ff0000;
+}
