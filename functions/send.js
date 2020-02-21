@@ -1,4 +1,4 @@
-const querystring = require('querystring')
+import querystring from 'querystring'
 const token = process.env.TELEGRAM_TOKEN
 
 exports.handler = function(event, context, callback) {
@@ -17,6 +17,6 @@ exports.handler = function(event, context, callback) {
 
   callback(null, {
     statusCode: 200,
-    body: { status: 'ok' },
+    body: JSON.stringify({ status: 'ok' }),
   })
 }
