@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Промышленная Автоматика и Системы Управления Прикладное программирование`,
-    siteUrl: `https://energylink.kz`,
+    siteUrl: `https://energy-link.kz`,
+    title: `Промышленная Автоматика Системы Управления Прикладное программирование`,
+    description: `Разработка внедрение модернизация автоматики: ПЛК, HMI, SCADA, Преобразователи частоты, датчики, полевые шины, сети, алгоритмы, программирование контроллеров`,
     items: [
       { key: 'about', to: '#about', title: 'Деятельность' },
       { key: 'usedin', to: '#usedin', title: 'Применение' },
       { key: 'portfolio', to: '#portfolio', title: 'Портфолио' },
       { key: 'contacts', to: '#contacts', title: 'Контакты' },
     ],
-    description: `Energy Link landing page`,
     author: `@fxvaskin`,
     emails: [`Energy.Link@mail.ru`],
     phoneNumbers: [`+7 701 712 67 64`, `+7 705 965 50 82`],
