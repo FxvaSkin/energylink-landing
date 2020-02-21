@@ -1,4 +1,4 @@
-import querystring from 'querystring'
+const querystring = require('querystring')
 const token = process.env.TELEGRAM_TOKEN
 
 exports.handler = function(event, context, callback) {
