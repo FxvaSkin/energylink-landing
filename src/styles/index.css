@@ -6,3 +6,22 @@
 *::selection {
   background-color: #888899;
 }
+
+a {
+  padding: 0.3em;
+  margin: -0.3em;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select,
+  select:focus,
+  input,
+  input:focus {
+    font-size: 16px !important;
+  }
+}
