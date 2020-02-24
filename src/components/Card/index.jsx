@@ -1,11 +1,10 @@
 import React from 'react'
 import cx from 'classnames'
 import styles from './card.module.css'
-import Image from '../image'
 
 const Card = ({
   hoverable = false,
-  imageData,
+  image,
   children,
   className,
   footer = true,
@@ -16,9 +15,9 @@ const Card = ({
       className={cx(styles.card, hoverable && styles.hoverable, className)}
       {...props}
     >
-      {imageData && (
+      {image && (
         <header className={cx(styles.header)}>
-          <Image data={imageData} />
+          <img src={image} className={styles.image} />
         </header>
       )}
       <main className={cx(styles.main)}>{children}</main>

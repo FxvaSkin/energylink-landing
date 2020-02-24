@@ -22,5 +22,4 @@
 
 .button:focus {
   box-shadow: 0 0 3px 4px rgba(136, 136, 153, 0.1);
-  outline: none;
 }
