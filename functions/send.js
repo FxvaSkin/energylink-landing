@@ -1,19 +1,32 @@
-import querystring from 'querystring'
+import https from 'https'
+
 const token = process.env.TELEGRAM_TOKEN
+const chatId = process.env.CHAT_ID
 
 exports.handler = function(event, context, callback) {
+  if (!token || !chatId) {
+    return { statusCode: 500, body: 'Environment variables required' }
+  }
   // Only allow POST
   if (event.httpMethod !== 'POST') {
     return { statusCode: 405, body: 'Method Not Allowed' }
   }
 
-  // When the method is POST, the name will no longer be in the event’s
-  // queryStringParameters – it’ll be in the event body encoded as a query string
-  const params = querystring.parse(event.body)
-  const { name = 'ананимус', phone } = params
+  const { name = 'ананимус', phoneNumber } = JSON.parse(event.body)
 
-  console.log({ token })
-  console.log(name, phone)
+  if (!phoneNumber) {
+    return { statusCode: 402, body: 'Bad Request' }
+  }
+  const encoded = `${name}%0A%2B${encodeURI(phoneNumber)}`
+
+  https
+    .get(
+      `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encoded}`,
+      () => {},
+    )
+    .on('error', err => {
+      console.log('Error: ' + err.message)
+    })
 
   callback(null, {
     statusCode: 200,
