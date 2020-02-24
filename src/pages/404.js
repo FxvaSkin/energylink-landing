@@ -1,8 +1,8 @@
-// import { navigate } from 'gatsby'
-
-const FourOhFour = () => {
-  // navigate('/')
+const NotFoundPage = () => {
+  if (typeof window !== 'undefined') {
+    window.location.replace('/')
+  }
   return null
 }
 
-export default FourOhFour
+export default NotFoundPage
