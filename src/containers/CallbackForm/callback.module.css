@@ -1,14 +1,16 @@
 .form {
   display: grid;
+  grid-template-rows: min-content min-content 1fr;
   gap: 1em;
   margin-top: 2em;
+  /* align-content: end; */
 }
 
 .card.card {
-  height: 24em;
+  min-height: 24em;
 }
 
 .button.button {
-  position: absolute; /* ¯\_(ツ)_/¯ */
-  bottom: 2em;
+  /* height: 2em; */
+  align-self: end;
 }

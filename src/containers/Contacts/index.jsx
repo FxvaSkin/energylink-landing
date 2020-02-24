@@ -6,6 +6,7 @@ import { CallbackForm } from 'containers/CallbackForm'
 
 import { Section } from 'components/Section'
 import { Header } from 'components/Header'
+import { Card } from 'components/Card'
 
 const MailIcon = props => (
   <svg
@@ -58,7 +59,7 @@ const Contacts = () => {
 
   return (
     <Section id="contacts" contentClassName={styles.section}>
-      <div>
+      <div className={styles.contacts}>
         <Header as="h2">Контакты</Header>
         <p>У вас есть вопросы?</p>
         <p>Вы можете связаться с нами</p>

@@ -16,14 +16,19 @@
 }
 
 .section {
-  display: flex;
-  justify-content: stretch;
-}
-
-.section > * {
-  flex: 1;
+  margin-top: -8em;
+  padding-top: 10em;
+  display: grid;
+  column-gap: 4em;
+  row-gap: 7em;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
 }
 
 .callback.callback {
-  transform: translateY(-9em);
+  transform: translateY(-5em);
+}
+
+.contacts {
+  /* justify-self: center; */
+  padding: 0 2em;
 }

@@ -1,7 +1,12 @@
 .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
-  gap: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1em -2em;
+}
+
+.container > * {
+  flex: 1 1 40%;
+  margin: 1em 2em;
 }
 
 .section {

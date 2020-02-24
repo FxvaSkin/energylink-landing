@@ -49,11 +49,13 @@ const CallbackForm = ({ className, ...props }) => {
           label="Ваше имя"
           onChange={handleChangeName}
           value={name}
+          maxLength={256}
         />
         <Input
           name="phoneNumber"
           label="Номер телефона"
           required
+          mask={'+{7} (000) 000-00-00'}
           onChange={handleChangePhoneNumber}
           value={phoneNumber}
         />

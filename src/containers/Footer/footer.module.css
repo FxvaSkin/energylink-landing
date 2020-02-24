@@ -11,7 +11,7 @@
   margin: 0 auto;
   padding: 1em;
   max-width: var(--max-width);
-  min-height: 14rem;
+  /* min-height: 14rem; */
   color: #aaaaaa;
   font-size: 0.875rem;
 
