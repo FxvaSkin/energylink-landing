@@ -7052,6 +7052,11 @@ imagemin@^6.1.0:
     pify "^4.0.1"
     replace-ext "^1.0.0"
 
+imask@^5.2.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/imask/-/imask-5.2.1.tgz#1576ca468ee32b2983618f5fbfd8d93d0351e826"
+  integrity sha512-MiYUC6zP3sHldoXovnbpYc9UXjL8t4GuiZGGgillFljzJaN/osq8AeCuS1DUwzwRydMLi8F9ZK3xHkOrXjuNcw==
+
 import-cwd@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/import-cwd/-/import-cwd-2.1.0.tgz#aa6cf36e722761285cb371ec6519f53e2435b0a9"
@@ -10458,6 +10463,14 @@ react-hot-loader@^4.12.18:
     react-lifecycles-compat "^3.0.4"
     shallowequal "^1.1.0"
     source-map "^0.7.3"
+
+react-imask@5.2.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/react-imask/-/react-imask-5.2.1.tgz#26542f1c7b4470738404d8d01dfa6fe51ad386ce"
+  integrity sha512-7Kqz1k1rWbKB17RH8aGbnNYy8cCrUTHv9wxQGN5iEd1kPDcbcvJoFA46aSrXcytKeqyf30FTytIWIqQ9rw0Q4Q==
+  dependencies:
+    imask "^5.2.1"
+    prop-types "^15.7.2"
 
 react-is@^16.7.0, react-is@^16.8.1:
   version "16.8.3"

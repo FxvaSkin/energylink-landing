@@ -1,9 +1,25 @@
 {
   "name": "energylink-landing",
-  "private": true,
   "description": "Landing for Energylink with Gatsby",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "@fxvaskin <fxva@outlook.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fxvaskin/energylink-landing"
+  },
+  "private": false,
+  "license": "MIT",
+  "keywords": [
+    "gatsby", "landing"
+  ],
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "build:lambda": "netlify-lambda build functions"
+  },
   "dependencies": {
     "classnames": "^2.2.6",
     "gatsby": "^2.19.10",
@@ -17,20 +33,11 @@
     "gatsby-plugin-sitemap": "^2.2.27",
     "gatsby-source-filesystem": "^2.1.47",
     "gatsby-transformer-sharp": "^2.3.13",
-    "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
+    "react-imask": "5.2.1",
     "smooth-scroll": "^16.1.0"
-  },
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "build:lambda": "netlify-lambda build functions"
   },
   "devDependencies": {
     "netlify-lambda": "^1.6.3"
