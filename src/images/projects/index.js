@@ -1,0 +1,8 @@
+export { default as clear1 } from './clear1.png'
+export { default as clear2 } from './clear2.png'
+export { default as communic } from './communic.png'
+export { default as deltaUni } from './deltaUni.png'
+export { default as lad } from './lad.png'
+export { default as siemensPanel } from './siemensPanel.png'
+export { default as conveyor } from './conveyor.png'
+export { default as nss2 } from './nss2.png'
