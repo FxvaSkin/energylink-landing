@@ -5,6 +5,7 @@ import styles from './card.module.css'
 const Card = ({
   hoverable = false,
   image,
+  alt,
   children,
   className,
   footer = true,
@@ -17,7 +18,7 @@ const Card = ({
     >
       {image && (
         <header className={cx(styles.header)}>
-          <img src={image} className={styles.image} />
+          <img src={image} className={styles.image} alt={alt} />
         </header>
       )}
       <main className={cx(styles.main)}>{children}</main>
