@@ -2,6 +2,7 @@ import https from 'https'
 
 const token = process.env.TELEGRAM_TOKEN
 const chatId = process.env.CHAT_ID
+const chatId2 = process.env.CHAT_ID2
 
 exports.handler = function(event, context, callback) {
   if (!token || !chatId) {
@@ -22,6 +23,15 @@ exports.handler = function(event, context, callback) {
   https
     .get(
       `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encoded}`,
+      () => {},
+    )
+    .on('error', err => {
+      console.log('Error: ' + err.message)
+    })
+
+  https
+    .get(
+      `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId2}&text=${encoded}`,
       () => {},
     )
     .on('error', err => {
